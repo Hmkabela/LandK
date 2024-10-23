@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding RSVP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Wedding RSVP</h1>
+        <form id="rsvpForm">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" required>
+
+            <label>Will you be attending?</label>
+            <label><input type="radio" name="attendance" value="yes" required> Yes</label>
+            <label><input type="radio" name="attendance" value="no"> No</label>
+
+            <button type="submit">Submit</button>
+        </form>
+        <div id="responseMessage" class="hidden"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
